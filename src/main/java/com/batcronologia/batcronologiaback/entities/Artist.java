@@ -28,4 +28,8 @@ public class Artist {
             joinColumns = @JoinColumn(name = "artist_id"),
             inverseJoinColumns = @JoinColumn(name = "issue_id"))
     private List<Issue> issues;
+
+    public Artist(Long id) {
+        this.id = id;
+    }
 }

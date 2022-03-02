@@ -30,4 +30,8 @@ public class BookBr {
             joinColumns = @JoinColumn(name = "bookbr_id"),
             inverseJoinColumns = @JoinColumn(name = "issue_id"))
     private List<Issue> issues;
+
+    public BookBr(Long id) {
+        this.id = id;
+    }
 }

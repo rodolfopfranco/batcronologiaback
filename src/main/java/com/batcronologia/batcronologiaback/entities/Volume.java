@@ -21,4 +21,8 @@ public class Volume {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+
+    public Volume(Long id) {
+        this.id = id;
+    }
 }

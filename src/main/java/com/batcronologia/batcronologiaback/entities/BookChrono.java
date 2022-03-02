@@ -32,4 +32,8 @@ public class BookChrono {
             joinColumns = @JoinColumn(name = "bookchrono_id"),
             inverseJoinColumns = @JoinColumn(name = "issue_id"))
     private List<Issue> issues;
+
+    public BookChrono(Long id) {
+        this.id = id;
+    }
 }

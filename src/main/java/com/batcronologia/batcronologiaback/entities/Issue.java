@@ -30,4 +30,8 @@ public class Issue {
 
     @ManyToMany(mappedBy = "issues")
     private List<BookBr> booksBR;
+
+    public Issue(Long id) {
+        this.id = id;
+    }
 }
