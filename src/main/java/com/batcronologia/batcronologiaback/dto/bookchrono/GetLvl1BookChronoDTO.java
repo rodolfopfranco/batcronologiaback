@@ -13,8 +13,8 @@ import java.util.Date;
 @NoArgsConstructor
 public class GetLvl1BookChronoDTO {
     private Long id;
-    private Long order;
-    private Date date;
+    private Long orderNumber;
+    private Date datePublish;
     private String name;
     private String desccription;
     private String urlCover;

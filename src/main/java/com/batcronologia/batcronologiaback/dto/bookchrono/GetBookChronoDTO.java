@@ -15,8 +15,8 @@ import java.util.List;
 @NoArgsConstructor
 public class GetBookChronoDTO {
     private Long id;
-    private Long order;
-    private Date date;
+    private Long orderNumber;
+    private Date datePublish;
     private String name;
     private String description;
     private String urlCover;

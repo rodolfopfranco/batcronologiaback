@@ -20,8 +20,8 @@ public class BookChrono {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Long order;
-    private Date date;
+    private Long orderNumber;
+    private Date datePublish;
     private String name;
     private String description;
     private String urlCover;

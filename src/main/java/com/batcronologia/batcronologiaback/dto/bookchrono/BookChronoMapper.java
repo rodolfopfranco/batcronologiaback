@@ -11,8 +11,8 @@ public class BookChronoMapper {
     public static BookChrono fromDTO(SaveBookChronoDTO dto){
         return new BookChrono(
                 null,
-                dto.getOrder(),
-                dto.getDate(),
+                dto.getOrderNumber(),
+                dto.getDatePublish(),
                 dto.getName(),
                 dto.getDescription(),
                 dto.getUrlCover(),
@@ -23,8 +23,8 @@ public class BookChronoMapper {
     public static GetBookChronoDTO fromEntity(BookChrono bookChrono){
         return new GetBookChronoDTO(
                 bookChrono.getId(),
-                bookChrono.getOrder(),
-                bookChrono.getDate(),
+                bookChrono.getOrderNumber(),
+                bookChrono.getDatePublish(),
                 bookChrono.getName(),
                 bookChrono.getDescription(),
                 bookChrono.getUrlCover(),
@@ -35,8 +35,8 @@ public class BookChronoMapper {
     public static GetLvl1BookChronoDTO fromEntityToLvl1DTO(BookChrono bookChrono){
         return new GetLvl1BookChronoDTO(
                 bookChrono.getId(),
-                bookChrono.getOrder(),
-                bookChrono.getDate(),
+                bookChrono.getOrderNumber(),
+                bookChrono.getDatePublish(),
                 bookChrono.getName(),
                 bookChrono.getDescription(),
                 bookChrono.getUrlCover()

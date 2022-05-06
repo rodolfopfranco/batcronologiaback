@@ -13,8 +13,8 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class SaveBookChronoDTO {
-    private Long order;
-    private Date date;
+    private Long orderNumber;
+    private Date datePublish;
     private String name;
     private String description;
     private String urlCover;
