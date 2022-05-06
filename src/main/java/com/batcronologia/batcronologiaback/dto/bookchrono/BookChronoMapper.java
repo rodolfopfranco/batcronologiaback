@@ -14,7 +14,7 @@ public class BookChronoMapper {
                 dto.getOrder(),
                 dto.getDate(),
                 dto.getName(),
-                dto.getDesc(),
+                dto.getDescription(),
                 dto.getUrlCover(),
                 IssueMapper.fromLongListToEntityList(dto.getIssuesIds())
         );
@@ -26,7 +26,7 @@ public class BookChronoMapper {
                 bookChrono.getOrder(),
                 bookChrono.getDate(),
                 bookChrono.getName(),
-                bookChrono.getDesc(),
+                bookChrono.getDescription(),
                 bookChrono.getUrlCover(),
                 IssueMapper.fromEntityListToLvl1DtoList(bookChrono.getIssues())
         );
@@ -38,7 +38,7 @@ public class BookChronoMapper {
                 bookChrono.getOrder(),
                 bookChrono.getDate(),
                 bookChrono.getName(),
-                bookChrono.getDesc(),
+                bookChrono.getDescription(),
                 bookChrono.getUrlCover()
         );
     }

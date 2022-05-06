@@ -16,6 +16,6 @@ public class GetLvl1BookChronoDTO {
     private Long order;
     private Date date;
     private String name;
-    private String desc;
+    private String desccription;
     private String urlCover;
 }

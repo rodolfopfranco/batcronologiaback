@@ -18,7 +18,7 @@ public class GetBookChronoDTO {
     private Long order;
     private Date date;
     private String name;
-    private String desc;
+    private String description;
     private String urlCover;
     private List<GetLvl1IssueDTO> issues;
 }

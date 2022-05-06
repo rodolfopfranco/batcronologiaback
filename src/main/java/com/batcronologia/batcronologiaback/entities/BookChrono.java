@@ -23,7 +23,7 @@ public class BookChrono {
     private Long order;
     private Date date;
     private String name;
-    private String desc;
+    private String description;
     private String urlCover;
 
     @ManyToMany

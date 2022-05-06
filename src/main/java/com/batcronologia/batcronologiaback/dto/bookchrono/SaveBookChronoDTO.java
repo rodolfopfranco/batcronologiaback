@@ -16,7 +16,7 @@ public class SaveBookChronoDTO {
     private Long order;
     private Date date;
     private String name;
-    private String desc;
+    private String description;
     private String urlCover;
     private List<Long> issuesIds;
 }
