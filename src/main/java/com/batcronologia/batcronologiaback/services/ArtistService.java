@@ -28,7 +28,7 @@ public class ArtistService {
     }
 
     public Page<Artist> listArtistByIssue(Pageable pageable, Long idIssue){
-        return this.artistRepository.findByIssue_Id(idIssue, pageable);
+        return this.artistRepository.findByIssues_Id(idIssue, pageable);
     }
 
     public Artist findyArtist(Long id){

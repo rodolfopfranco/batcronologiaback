@@ -10,5 +10,5 @@ import org.springframework.stereotype.Repository;
 public interface ArtistRepository extends JpaRepository<Artist, Long> {
 
     Page<Artist> findAll(Pageable pageable);
-    Page<Artist> findByIssue_Id(Long IssueId, Pageable pageable);
+    Page<Artist> findByIssues_Id(Long IssueId, Pageable pageable);
 }
