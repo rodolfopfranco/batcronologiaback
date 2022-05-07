@@ -9,4 +9,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface IssueRepository extends JpaRepository<Issue, Long> {
     Page<Issue> findAll(Pageable pageable);
+
+    Page<Issue> findByVolume_Id(Long idVolume, Pageable pageable);
 }
