@@ -14,7 +14,6 @@ public class ArtistService {
 
     private final ArtistRepository artistRepository;
 
-
     public ArtistService(ArtistRepository artistRepository) {
         this.artistRepository = artistRepository;
     }
