@@ -16,7 +16,7 @@ public class BookBrMapper {
         );
     }
 
-    public GetBookBrDTO fromEntity(BookBr bookBr){
+    public static GetBookBrDTO fromEntity(BookBr bookBr){
         return new GetBookBrDTO(
                 bookBr.getId(),
                 bookBr.getNome(),
