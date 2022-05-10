@@ -32,7 +32,7 @@ public class IssueController {
 
     @GetMapping("{id}")
     public ResponseEntity<GetIssueDTO> findIssue(@PathVariable Long id){
-        Issue issue = this.issueService.findyIssue(id);
+        Issue issue = this.issueService.findByIssue(id);
         return ResponseEntity.ok(IssueMapper.fromEntity(issue));
     }
 

@@ -30,19 +30,19 @@ public class ArtistService {
         return this.artistRepository.findByIssues_Id(idIssue, pageable);
     }
 
-    public Artist findyArtist(Long id){
+    public Artist findByArtist(Long id){
         Optional<Artist> artistOptional = this.artistRepository.findById(id);
         return artistOptional.orElseThrow(() -> new EntityNotFoundException("Artist not found"));
     }
 
     public Artist updateArtist(Artist artist, Long id){
-        Artist artistFound = this.findyArtist(id);
+        Artist artistFound = this.findByArtist(id);
         artist.setId(id);
         return this.artistRepository.save(artist);
     }
 
     public void removeArtist(Long id){
-        Artist artistFound = this.findyArtist(id);
+        Artist artistFound = this.findByArtist(id);
         this.artistRepository.delete(artistFound);
     }
 }

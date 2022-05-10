@@ -32,7 +32,7 @@ public class VolumeController {
 
     @GetMapping("{id}")
     public ResponseEntity<GetVolumeDTO> findVolume(@PathVariable Long id){
-        Volume volume = this.volumeService.findyVolume(id);
+        Volume volume = this.volumeService.findByVolume(id);
         return ResponseEntity.ok(VolumeMapper.fromEntity(volume));
     }
 

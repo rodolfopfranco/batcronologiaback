@@ -25,19 +25,19 @@ public class VolumeService {
         return this.volumeRepository.findAll(pageable);
     }
 
-    public Volume findyVolume(Long id){
+    public Volume findByVolume(Long id){
         Optional<Volume> volumeOptional = this.volumeRepository.findById(id);
         return volumeOptional.orElseThrow(() -> new EntityNotFoundException("Volume not found"));
     }
 
     public Volume updateVolume(Volume volume, Long id){
-        Volume volumeFound = this.findyVolume(id);
+        Volume volumeFound = this.findByVolume(id);
         volume.setId(id);
         return this.volumeRepository.save(volume);
     }
 
     public void removeVolume(Long id){
-        Volume volumeFound = this.findyVolume(id);
+        Volume volumeFound = this.findByVolume(id);
         this.volumeRepository.delete(volumeFound);
     }
 }
