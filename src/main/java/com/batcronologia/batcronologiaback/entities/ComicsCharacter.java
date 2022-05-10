@@ -13,7 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Character {
+public class ComicsCharacter {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,8 +24,8 @@ public class Character {
 
     @ManyToMany
     @JoinTable(
-            name = "character_bookchrono",
+            name = "comics_character_bookchrono",
             joinColumns = @JoinColumn(name = "bookchrono_id"),
-            inverseJoinColumns = @JoinColumn(name = "character_id"))
+            inverseJoinColumns = @JoinColumn(name = "comics_character_id"))
     private List<BookChrono> appearances;
 }

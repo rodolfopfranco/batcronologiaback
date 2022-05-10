@@ -1,4 +1,4 @@
-package com.batcronologia.batcronologiaback.dto.character;
+package com.batcronologia.batcronologiaback.dto.comicsCharacter;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class GetLvl1CharacterDTO {
+public class GetLvl1ComicsCharacterDTO {
     private Long id;
     private String name;
     private String aliases;

@@ -1,4 +1,4 @@
-package com.batcronologia.batcronologiaback.dto.character;
+package com.batcronologia.batcronologiaback.dto.comicsCharacter;
 
 import com.batcronologia.batcronologiaback.dto.bookchrono.GetLvl1BookChronoDTO;
 import lombok.AllArgsConstructor;
@@ -12,7 +12,7 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class GetCharacterDTO {
+public class GetComicsCharacterDTO {
     private Long id;
     private String name;
     private String aliases;
