@@ -23,7 +23,7 @@ public class BookChronoController {
     }
 
     @GetMapping
-    public ResponseEntity<Page<GetBookChronoDTO>> findAllBookChronos(@PageableDefault Pageable pageable){
+    public ResponseEntity<Page<GetBookChronoDTO>> findAllBookChronos(@PageableDefault(value = Integer.MAX_VALUE) Pageable pageable){
         return ResponseEntity.ok(
                 this.bookChronoService.listBookChrono(pageable)
                         .map(BookChronoMapper::fromEntity)
