@@ -28,8 +28,18 @@ INSERT INTO MATCHESMALONE.Issue(id, number, volume_id, url_cover) VALUES (19, 8,
 INSERT INTO MATCHESMALONE.Issue(id, number, volume_id, url_cover) VALUES (20, 9, 2, '');
 INSERT INTO MATCHESMALONE.Issue(id, number, volume_id, url_cover) VALUES (21, 10, 2, '');
 
-INSERT INTO MATCHESMALONE.Book_Chrono(id, date_publish, description, name, order_number, url_cover) VALUES (1, '1939-05-01', 'Primeira aparição', 'Detective Comics - Era de Ouro', 1, '');
-INSERT INTO MATCHESMALONE.Book_Chrono(id, date_publish, description, name, order_number, url_cover) VALUES (2, '1940-04-01', 'Surgimento do Robin', 'Batman - Era de Ouro', 2, '');
+INSERT INTO MATCHESMALONE.Book_Chrono(id, date_publish, description, name, order_number, url_cover) VALUES (1, '1939-05-01', 'Primeira aparição', 'Detective Comics - Era de Ouro', 1, 'https://i.pinimg.com/736x/84/7e/ed/847eed9b8bc8f473183dcefa66bf7fa7.jpg');
+INSERT INTO MATCHESMALONE.Book_Chrono(id, date_publish, description, name, order_number, url_cover) VALUES (2, '1940-04-01', 'Surgimento do Robin', 'Batman - Era de Ouro', 2, 'https://i.pinimg.com/736x/84/7e/ed/847eed9b8bc8f473183dcefa66bf7fa7.jpg');
+INSERT INTO MATCHESMALONE.Book_Chrono(id, date_publish, description, name, order_number, url_cover) VALUES (3, '1940-04-01', 'Surgimento do Robin', 'Batman - Era de Ouro', 2, 'https://i.pinimg.com/736x/84/7e/ed/847eed9b8bc8f473183dcefa66bf7fa7.jpg');
+INSERT INTO MATCHESMALONE.Book_Chrono(id, date_publish, description, name, order_number, url_cover) VALUES (4, '1940-04-01', 'Surgimento do Robin', 'Batman - Era de Ouro', 2, 'https://i.pinimg.com/736x/84/7e/ed/847eed9b8bc8f473183dcefa66bf7fa7.jpg');
+INSERT INTO MATCHESMALONE.Book_Chrono(id, date_publish, description, name, order_number, url_cover) VALUES (5, '1940-04-01', 'Surgimento do Robin', 'Batman - Era de Ouro', 2, 'https://i.pinimg.com/736x/84/7e/ed/847eed9b8bc8f473183dcefa66bf7fa7.jpg');
+INSERT INTO MATCHESMALONE.Book_Chrono(id, date_publish, description, name, order_number, url_cover) VALUES (6, '1940-04-01', 'Surgimento do Robin', 'Batman - Era de Ouro', 2, 'https://i.pinimg.com/736x/84/7e/ed/847eed9b8bc8f473183dcefa66bf7fa7.jpg');
+INSERT INTO MATCHESMALONE.Book_Chrono(id, date_publish, description, name, order_number, url_cover) VALUES (7, '1940-04-01', 'Surgimento do Robin', 'Batman - Era de Ouro', 2, 'https://i.pinimg.com/736x/84/7e/ed/847eed9b8bc8f473183dcefa66bf7fa7.jpg');
+INSERT INTO MATCHESMALONE.Book_Chrono(id, date_publish, description, name, order_number, url_cover) VALUES (8, '1940-04-01', 'Surgimento do Robin', 'Batman - Era de Ouro', 2, 'https://i.pinimg.com/736x/84/7e/ed/847eed9b8bc8f473183dcefa66bf7fa7.jpg');
+INSERT INTO MATCHESMALONE.Book_Chrono(id, date_publish, description, name, order_number, url_cover) VALUES (9, '1940-04-01', 'Surgimento do Robin', 'Batman - Era de Ouro', 2, 'https://i.pinimg.com/736x/84/7e/ed/847eed9b8bc8f473183dcefa66bf7fa7.jpg');
+INSERT INTO MATCHESMALONE.Book_Chrono(id, date_publish, description, name, order_number, url_cover) VALUES (10, '1940-04-01', 'Surgimento do Robin', 'Batman - Era de Prata', 2, 'https://i.pinimg.com/736x/84/7e/ed/847eed9b8bc8f473183dcefa66bf7fa7.jpg');
+INSERT INTO MATCHESMALONE.Book_Chrono(id, date_publish, description, name, order_number, url_cover) VALUES (11, '1940-04-01', 'Surgimento do Robin', 'Batman - Era de Ouro', 2, 'https://i.pinimg.com/736x/84/7e/ed/847eed9b8bc8f473183dcefa66bf7fa7.jpg');
+INSERT INTO MATCHESMALONE.Book_Chrono(id, date_publish, description, name, order_number, url_cover) VALUES (12, '1940-04-01', 'Surgimento do Robin', 'Batman - Era de Ouro', 2, 'https://i.pinimg.com/736x/84/7e/ed/847eed9b8bc8f473183dcefa66bf7fa7.jpg');
 
 INSERT INTO MATCHESMALONE.BOOKCHRONO_ISSUES(bookchrono_id, issue_id) VALUES (1, 1);
 INSERT INTO MATCHESMALONE.BOOKCHRONO_ISSUES(bookchrono_id, issue_id) VALUES (1, 2);
