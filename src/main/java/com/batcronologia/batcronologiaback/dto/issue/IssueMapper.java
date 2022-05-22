@@ -34,12 +34,20 @@ public class IssueMapper {
     }
 
     public static GetLvl1IssueDTO fromEntityToLvl1(Issue issue){
-        return new GetLvl1IssueDTO(
-                issue.getId(),
-                issue.getNumber(),
-                issue.getUrlCover(),
-                VolumeMapper.fromEntity(issue.getVolume())
-        );
+        try{
+            return GetLvl1IssueDTO.builder()
+                    .id(issue.getId())
+                    .number(issue.getNumber())
+                    .urlCover(issue.getUrlCover())
+                    .volume(VolumeMapper.fromEntity(issue.getVolume()))
+                    .build();
+        } catch (NullPointerException ne){
+            return GetLvl1IssueDTO.builder()
+                    .id(issue.getId())
+                    .number(issue.getNumber())
+                    .urlCover(issue.getUrlCover())
+                    .build();
+        }
     }
 
     private static List<Artist> fromIdArtistList(List<Long> idsArtist){
